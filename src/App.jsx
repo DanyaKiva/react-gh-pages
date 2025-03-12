@@ -1,17 +1,24 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import Comments from './components/Comments.jsx'
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './pages/home';
+import Page from './pages/page';
+import Profile from './pages/profile';
+import Users from './pages/Users';
+import Navbar from './components/Navbar';
+import './App.css';
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <Comments/>
-    </>
-  )
+    <Router>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/page" element={<Page />} />
+        <Route path="/profile" element={<Profile />} />
+        <Route path="/users" element={<Users />} />
+      </Routes>
+    </Router>
+  );
 }
 
-export default App
+export default App;
