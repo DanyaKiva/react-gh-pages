@@ -5,6 +5,7 @@ import Page from './pages/page';
 import Profile from './pages/profile';
 import Users from './pages/Users';
 import Books from './pages/Books';
+import TodoPage from './pages/TodoPage';
 import Navbar from './components/Navbar';
 import './App.css';
 
@@ -18,6 +19,7 @@ function App() {
         <Route path="/profile" element={<Profile />} />
         <Route path="/users" element={<Users />} />
         <Route path="/books" element={<Books />} />
+        <Route path="/todo" element={<TodoPage />} />
       </Routes>
     </Router>
   );

@@ -1,0 +1,124 @@
+.todo-container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 20px;
+  background-color: var(--background-color); /* Ensure background adapts to theme */
+  color: var(--text-color); /* Ensure text color adapts to theme */
+  transition: background-color 0.3s ease, color 0.3s ease;
+  border-radius: 8px; /* Add rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+  font-family: 'Inter', sans-serif; /* Use a modern font */
+}
+
+.todo-form {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+  justify-content: center; /* Center the form */
+  align-items: center; /* Ensure input and button are vertically aligned */
+}
+
+.todo-input {
+  flex: 1;
+  padding: 10px;
+  border: 2px solid var(--text-color); /* Use theme color for border */
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: var(--background-color); /* Adapt to theme */
+  color: var(--text-color); /* Adapt text color to theme */
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.todo-input:focus {
+  outline: none;
+  border-color: #4caf50; /* Highlight border on focus */
+}
+
+.todo-button {
+  margin-top: -10;
+  margin-top: 0px;
+  margin-bottom: 4px;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 8px; /* Add rounded corners */
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  font-weight: bold; /* Make the button text bold */
+  height: 100%; /* Match the height of the input field */
+  display: flex;
+  align-items: center; /* Center the text vertically */
+  justify-content: center; /* Center the text horizontally */
+}
+
+.todo-button:hover {
+  background-color: #45a049;
+  transform: scale(1.05); /* Add a slight zoom effect */
+}
+
+.todo-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px; /* Add spacing above the list */
+}
+
+.todo-item {
+  padding: 20px; /* Increase padding for better spacing */
+  background-color: var(--background-color); /* Ensure background adapts to theme */
+  color: var(--text-color); /* Ensure text color adapts to theme */
+  margin-bottom: 10px;
+  border-radius: 8px; /* Add rounded corners */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  border: 1px solid var(--text-color); /* Ensure border adapts to theme */
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.todo-item:hover {
+  transform: translateY(-3px); /* Add a subtle lift effect */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Enhance shadow on hover */
+}
+
+.todo-item.completed .todo-text {
+  text-decoration: line-through;
+  color: #888; /* Slightly dimmed color for completed tasks */
+  font-style: italic; /* Add italic style for completed tasks */
+}
+
+.todo-item-content {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.todo-checkbox {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
+
+.todo-delete-button {
+  padding: 5px 10px;
+  background-color: #ff4444;
+  color: white;
+  border: none;
+  border-radius: 8px; /* Add rounded corners */
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  font-weight: bold; /* Make the button text bold */
+}
+
+.todo-delete-button:hover {
+  background-color: #cc0000;
+  transform: scale(1.1); /* Add a slight zoom effect */
+}
+
+.todo-text {
+  font-size: 18px; /* Increase font size for better readability */
+  transition: all 0.3s ease;
+  color: var(--text-color); /* Ensure text color adapts to theme */
+  font-weight: 500; /* Make the text slightly bold */
+}

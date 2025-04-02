@@ -91,4 +91,8 @@ export interface Book {
         isAvailable: true
       }
   ];
-  
+
+  // Save books to localStorage if not already saved
+  if (!localStorage.getItem('books')) {
+    localStorage.setItem('books', JSON.stringify(books));
+  }

@@ -19,6 +19,6 @@
     "allowSyntheticDefaultImports": true,
     "types": ["jest", "@testing-library/jest-dom"]
   },
-  "include": ["src"],
+  "include": ["src", "src/firebase.ts"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

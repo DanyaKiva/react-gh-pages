@@ -1,0 +1,13 @@
+.home-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center; /* Center align the content */
+}
+
+.book-count {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 20px;
+  color: var(--text-color);
+}
