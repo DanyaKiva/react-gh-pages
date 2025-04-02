@@ -72,6 +72,7 @@ const Navbar = () => {
           <li><NavLink to="/users">Users</NavLink></li>
           <li><NavLink to="/books">Books</NavLink></li>
           <li><NavLink to="/todo">Todo</NavLink></li>
+          <li><NavLink to="/lifecycle">Lifecycle</NavLink></li>
         </ul>
         <button
           onClick={() => dispatch(toggleTheme())}
